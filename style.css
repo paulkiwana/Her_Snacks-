@@ -18,9 +18,23 @@
             background-color: var(--primary-color);
             color: var(--secondary-color);
             text-align: center;
-            padding: 1rem;
+           padding:1rem;
+           height:70px;
         }
-
+        .logo {
+            width: 115px;
+            height: 110px;
+            margin-right: 1rem;
+            position: relative;
+            left:-114px;
+            top:-10px;
+            padding:0;
+        }
+       h1{
+  position:relative;
+  top:-100px;
+  padding:0;
+}
         nav {
             background-color: var(--accent-color);
             padding: 0.5rem;
@@ -39,7 +53,7 @@
         }
 
         nav ul li a {
-            color: var(--secondary-color);
+            color:var(--secondary-color);
             text-decoration: none;
             font-weight: bold;
         }
