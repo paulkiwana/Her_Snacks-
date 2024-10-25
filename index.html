@@ -4,362 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Her Snacks - Delicious Treats</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-      <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/her_snacks_logo.png" alt="Her Snacks Logo" class="logo">
-    
-        <h1>Her Snacks</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#snacks">Snacks</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="home">
-            <h2>Welcome to Her Snacks</h2>
-            <p>At Her Snacks, we believe in creating thoughtfully crafted snacking experiences that go beyond mere consumption. Each snack is a catalyst for joy and warmth, designed to bring people together.</p>
-        </section>
-
-        <section id="snacks">
-            <h2>Our Snacks</h2>
-            <div class="snack-grid" id="snack-container">
-                <!-- Snacks will be dynamically added here --
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <h3>Our Mission</h3>
-            <p>“To provide and curate snacking experiences that go above mere consumption; each snack a catalyst for joy and warmth.”</p>
-            
-            <h3>Our Vision</h3>
-            <p>
-              “To be the leading provider of thoughtfully crafted snacks that spark connection and comfort, transforming lives with every bite and building a global community united by shared joy.”
-            </p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@hersnacks.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Her Snacks. All rights reserved.</p>
-    </footer>
-
-    <div id="cart-icon" aria-label="Shopping Cart">🛒</div>
-
-    <script src="main.js">
-        
-    </script>
-</body>
-</html>-->
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Her Snacks - Delicious Treats</title>
-    <style>
-        :root {
-            --primary-color: #8B6B4E;
-            --secondary-color: #F5DEB3;
-            --accent-color: #5C4033;
-            --background-color: #FFF8E7;
-            --text-color: #3E2723;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            text-align: center;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo {
-            width: 115px;
-            height: 110px;
-            margin-right: 1rem;
-        }
-
-        nav {
-            background-color: var(--accent-color);
-            padding: 0.5rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-       .product {
-            background-color: var(--secondary-color);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .product img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-right: 1rem;
-        }
-
-        .product-info {
-            flex: 1;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        #cart-icon {
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: 0.5rem;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        #menu-toggle {
-            display: none;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            border: none;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            cursor: pointer;
-            
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-                transition: bottom 0.6s ease-in-out;
-            }
-
-            nav.active {
-                display: block;
-               
-            }
-
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-
-            #menu-toggle {
-                display: block;
-                position: fixed;
-                top: 1rem;
-                left: 1rem;
-                z-index: 1001;
-            }
-
-             .product {
-                flex-direction: column;
-            }
-
-            .product img {
-                width: 100%;
-                height: auto;
-                margin-right: 0;
-                margin-bottom: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/her_snacks_logo.png" alt="Her Snacks Logo" class="logo">
-        <h1>Her Snacks</h1>
-    </header>
-
-    <button id="menu-toggle" aria-label="Toggle menu">☰</button>
-
-    <nav id="main-nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="home">
-            <h2>Welcome to Her Snacks!</h2>
-            <p>At Her Snacks, we believe in creating thoughtfully crafted snacking experiences that go beyond mere consumption. Each snack is a catalyst for joy and warmth, designed to bring people together.</p>
-        </section>
-
-        <section id="products">
-            <h2>Our Products</h2>
-            
-            <h3>Daddies</h3>
-            <p>Indulge in our delicious Daddies, available in two delightful flavors:</p>
-            
-            <div class="product">
-                <img src="/placeholder.svg?height=150&width=150" alt="Ginger-Cinnamon Daddies">
-                <div class="product-info">
-                    <h4>Ginger-Cinnamon</h4>
-                    <p><strong>Description:</strong> A warming blend of spicy ginger and sweet cinnamon, perfect for cozy moments.</p>
-                    <p><strong>Ingredients:</strong> Flour, Eggs, Milk, Butter, Sugar, Ginger, Cinnamon.</p>
-                    <p><strong>Allergen Information:</strong> Contains Milk, Eggs.</p>
-                    <p><strong>Price:</strong> UGX 6,000 per pack.</p>
-                    <p><strong>Packaging Options:</strong> Available in 600g packs.</p>
-                </div>
-            </div>
-            
-            <div class="product">
-                <img src="/placeholder.svg?height=150&width=150" alt="Vanilla Daddies">
-                <div class="product-info">
-                    <h4>Vanilla</h4>
-                    <p><strong>Description:</strong> Smooth and creamy vanilla flavor that delights with every bite.</p>
-                    <p><strong>Ingredients:</strong> Flour, Eggs, Butter, Milk, Sugar, Vanilla Extract.</p>
-                    <p><strong>Allergen Information:</strong> Contains Milk, Eggs.</p>
-                    <p><strong>Price:</strong> UGX 6,000 per pack.</p>
-                    <p><strong>Packaging Options:</strong> Available in 600g packs.</p>
-                </div>
-            </div>
-            
-            <h3>Roasted Peanuts</h3>
-            <div class="product">
-                <img src="/placeholder.svg?height=150&width=150" alt="Roasted Peanuts">
-                <div class="product-info">
-                    <p><strong>Description:</strong> Salted roasted peanuts that are perfect for sharing or enjoying on your own.</p>
-                    <p><strong>Ingredients:</strong> Peanuts, salt.</p>
-                    <p><strong>Allergen Information:</strong> Contains peanuts.</p>
-                    <p><strong>Price:</strong> UGX 6,000 per pack.</p>
-                    <p><strong>Packaging Options:</strong> Available in 500g packs.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <h3>Our Mission</h3>
-            <p>“To provide and curate snacking experiences that go above mere consumption; each snack a catalyst for joy and warmth.”</p>
-            
-            <h3>Our Vision</h3>
-            <p>
-              “To be the leading provider of thoughtfully crafted snacks that spark connection and comfort, transforming lives with every bite and building a global community united by shared joy.”
-            </p> 
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@hersnacks.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Her Snacks. All rights reserved.</p>
-    </footer>
-
-    <div id="cart-icon" aria-label="Shopping Cart">🛒</div>
-
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.querySelector(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                scrollToSection(this.getAttribute('href'));
-                if (window.innerWidth <= 768) {
-                    document.getElementById('main-nav').classList.remove('active');
-                }
-            });
-        });
-
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('main-nav').classList.toggle('active');
-        });
-
-        document.getElementById('cart-icon').addEventListener('click', () => {
-            alert('Cart clicked! View your items here.');
-            // In a real application, you would show the cart contents here
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const nav = document.getElementById('main-nav');
-            const menuToggle = document.getElementById('menu-toggle');
-            if (!nav.contains(event.target) && event.target !== menuToggle) {
-                nav.classList.remove('active');
-            }
-        });
-    </script>
-</body>
-</html>-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Her Snacks - Delicious Treats</title>
     <style>
         :root {
             --primary-color: #8B6B4E;
@@ -479,6 +123,9 @@
        
 
         @media (max-width: 768px) {
+          body{
+            zoom:0.7;
+          }
             .product {
                 flex-direction: column;
             }
@@ -623,9 +270,9 @@
             </p> 
         </section>
 
-<section style='height=200px'>
+<section >
   <h2>What people are saying</h2>
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This client 🤝 Me<br><br>These daddies are just the perfect snack 👌🏾I had to carry them with me to the field 😆<br><br>The pack in frame 1 is 5,000shs only. Please support my girl’s hustle 🙏🏾 <a href="https://t.co/l7uuU2QEba">https://t.co/l7uuU2QEba</a> <a href="https://t.co/rYg3GJpwwz">pic.twitter.com/rYg3GJpwwz</a></p>&mdash; Atim Joanne Jash (@TheeVoice256) <a href="https://twitter.com/TheeVoice256/status/1767474539687014704?ref_src=twsrc%5Etfw">March 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <blockquote class="twitter-tweet" style="line-height:1.5; font-size: 14px;padding:10px"><p lang="en" dir="ltr">This client 🤝 Me<br><br>These daddies are just the perfect snack 👌🏾I had to carry them with me to the field 😆<br><br>The pack in frame 1 is 5,000shs only. Please support my girl’s hustle 🙏🏾 <a href="https://t.co/l7uuU2QEba">https://t.co/l7uuU2QEba</a> <a href="https://t.co/rYg3GJpwwz">pic.twitter.com/rYg3GJpwwz</a></p>&mdash; Atim Joanne Jash (@TheeVoice256) <a href="https://twitter.com/TheeVoice256/status/1767474539687014704?ref_src=twsrc%5Etfw">March 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </section>
         <section id="contact">
             <h2>Contact Us</h2>
@@ -637,6 +284,377 @@
     </a>
     <a href="https://x.com/hersnacks256?s=21"  target="_blank">
         <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/logo-black.png" style="width:25px;" >
+    </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Her Snacks. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-icon" aria-label="Shopping Cart">🛒</div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                scrollToSection(this.getAttribute('href'));
+                document.getElementById('main-nav').classList.remove('active');
+            });
+        });
+
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+
+        document.getElementById('cart-icon').addEventListener('click', () => {
+            alert('Cart clicked! View your items here.');
+            // In a real application, you would show the cart contents here
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('main-nav');
+            const menuToggle = document.getElementById('menu-toggle');
+            if (!nav.contains(event.target) && event.target !== menuToggle) {
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her Snacks - Delicious Treats</title>
+    <style>
+        :root {
+            --primary-color: #8B6B4E;
+            --secondary-color: #F5DEB3;
+            --accent-color: #5C4033;
+            --background-color: #FFF8E7;
+            --text-color: #3E2723;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-right: 1rem;
+            position: relative;
+            left:30px;
+        }
+        nav {
+            background-color: var(--accent-color);
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+           
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap:20px;
+            
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+            padding:0;
+           
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+           padding:0;
+            
+        }
+        
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .product {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 1rem;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        #cart-icon {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 0.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #menu-toggle{
+          display:none;
+        }
+       
+        .review-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .review-images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+          body{
+            zoom:0.7;
+          }
+            .product {
+                flex-direction: column;
+            }
+
+            .product img {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            nav {
+            background-color: var(--accent-color);
+            padding: 0.5rem;
+            position: fixed;
+            top: 0;
+            left: -270px;
+            width: 250px;
+            height: 100%;
+            z-index: 1000;
+            transition: left 0.3s ease-in-out;
+        }
+
+        nav.active {
+            left: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-top: 50px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav ul li {
+            margin: 0.5rem 0;
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 0.5rem 1rem;
+        }
+         #menu-toggle {
+            display: block;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1001;
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #navimg{
+          display:none;
+        }
+        .review-images img {
+            width: 100%;
+            height: auto;
+        }
+        #review{
+          zoom:0.5;
+        }
+        .product img{
+          
+          height:320px;
+        }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/her_snacks_logo.png" alt="Her Snacks Logo" class="logo">
+        <h1>Her Snacks</h1>
+    </header>
+
+    <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+
+    <nav id="main-nav">
+      
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Her Snacks!</h2>
+            <p>At Her Snacks, we believe in creating thoughtfully crafted snacking experiences that go beyond mere consumption. Each snack is a catalyst for joy and warmth, designed to bring people together.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            
+            <h3>Daddies</h3>
+            <p>Indulge in our delicious Daddies, available in two delightful flavors:</p>
+            
+            <div class="product">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/her_snacks_daddies.jpg?height=150&width=150" alt="Ginger-Cinnamon Daddies">
+                <div class="product-info">
+                    <h4>Ginger-Cinnamon</h4>
+                    <p><strong>Description:</strong> A warming blend of spicy ginger and sweet cinnamon, perfect for cozy moments.</p>
+                    <p><strong>Ingredients:</strong> Flour, Eggs, Milk, Butter, Sugar, Ginger, Cinnamon.</p>
+                    <p><strong>Allergen Information:</strong> Contains Milk, Eggs.</p>
+                    <p><strong>Price:</strong> UGX 6,000 per pack.</p>
+                    <p><strong>Packaging Options:</strong> Available in 600g packs.</p>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/her_snacks_daddies.jpg?height=150&width=150" alt="Vanilla Daddies">
+                <div class="product-info">
+                    <h4>Vanilla</h4>
+                    <p><strong>Description:</strong> Smooth and creamy vanilla flavor that delights with every bite.</p>
+                    <p><strong>Ingredients:</strong> Flour, Eggs, Butter, Milk, Sugar, Vanilla Extract.</p>
+                    <p><strong>Allergen Information:</strong> Contains Milk, Eggs.</p>
+                    <p><strong>Price:</strong> UGX 6,000 per pack.</p>
+                    <p><strong>Packaging Options:</strong> Available in 600g packs.</p>
+                </div>
+            </div>
+            
+            <h3>Roasted Peanuts</h3>
+            <div class="product">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/her_snacks_roast_peanut.jpg?height=150&width=150" alt="Roasted Peanuts">
+                <div class="product-info">
+                    <p><strong>Description:</strong> Salted roasted peanuts that are perfect for sharing or enjoying on your own.</p>
+                    <p><strong>Ingredients:</strong> Peanuts, salt.</p>
+                    <p><strong>Allergen Information:</strong> Contains peanuts.</p>
+                    <p><strong>Price:</strong> UGX 6,000 per pack.</p>
+                    <p><strong>Packaging Options:</strong> Available in 500g packs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <h3>Our Mission</h3>
+            <p>"To provide and curate snacking experiences that go above mere consumption; each snack a catalyst for joy and warmth."</p>
+            
+            <h3>Our Vision</h3>
+            <p>
+              "To be the leading provider of thoughtfully crafted snacks that spark connection and comfort, transforming lives with every bite and building a global community united by shared joy."
+            </p> 
+        </section>
+
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-images">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/review1.jpg" alt="Customer Review 1">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/review2.jpg" alt="Customer Review 2">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/review3.jpg" alt="Customer Review 3">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/review4.jpg" alt="Customer Review 4">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/review5.jpg" alt="Customer Review 5">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/review6.jpg" alt="Customer Review 6">
+            </div>
+        </section>
+
+        <section>
+          <h2>What people are saying</h2>
+          <blockquote class="twitter-tweet" style="line-height:1.5; font-size: 14px;padding:10px"><p lang="en" dir="ltr">This client 🤝 Me<br><br>These daddies are just the perfect snack 👌🏾I had to carry them with me to the field 😆<br><br>The pack in frame 1 is 5,000shs only. Please support my girl's hustle 🙏🏾 <a href="https://t.co/l7uuU2QEba">https://t.co/l7uuU2QEba</a> <a href="https://t.co/rYg3GJpwwz">pic.twitter.com/rYg3GJpwwz</a></p>&mdash; Atim Joanne Jash (@TheeVoice256) <a href="https://twitter.com/TheeVoice256/status/1767474539687014704?ref_src=twsrc%5Etfw">March 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+           <i class="fas fa-envelope"></i> <p>Email: hersnacks256@gmail.com</p>
+            <p>Phone:  (+256) 788279975</p>
+            
+            <a href="https://www.instagram.com/her_snacks256/profilecard/?igsh=MXRqNDA2OXQyMXk5cg=="  target="_blank">
+        <i class="fa-brands fa-instagram" style="color: salmon; font-size:36px;"></i>
+    </a>
+    <a href="https://x.com/hersnacks256?s=21"  target="_blank">
+        <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/refs/heads/main/logo-black.png" style="width:25px;" alt="X (formerly Twitter) logo">
     </a>
         </section>
     </main>
