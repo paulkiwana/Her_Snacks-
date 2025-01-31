@@ -467,7 +467,59 @@
             object-fit: cover;
             border-radius: 8px;
         }
+        .contact-section {
+            padding: 4rem 2rem;
+            background-color: var(--card-bg);
+            text-align: center;
+        }
 
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            background-color: ghostwhite;
+            transition: all 0.3s;
+            color: var(--text);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(182, 208, 226, 0.2);
+        }
+         .btn {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn:disabled {
+            background-color: var(--border);
+            cursor: not-allowed;
+            transform: none;
+        }
         @media (max-width: 768px) {
           body{
             zoom:0.7;
@@ -645,8 +697,22 @@
           <blockquote class="twitter-tweet" style="line-height:1.5; font-size: 14px;padding:10px"><p lang="en" dir="ltr">This client 🤝 Me<br><br>These daddies are just the perfect snack 👌🏾I had to carry them with me to the field 😆<br><br>The pack in frame 1 is 5,000shs only. Please support my girl's hustle 🙏🏾 <a href="https://t.co/l7uuU2QEba">https://t.co/l7uuU2QEba</a> <a href="https://t.co/rYg3GJpwwz">pic.twitter.com/rYg3GJpwwz</a></p>&mdash; Atim Joanne Jash (@TheeVoice256) <a href="https://twitter.com/TheeVoice256/status/1767474539687014704?ref_src=twsrc%5Etfw">March 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
+        
+            <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        
            <i class="fas fa-envelope"></i> <p>Email: hersnacks256@gmail.com</p>
             <p>Phone:  (+256) 788279975</p>
             
